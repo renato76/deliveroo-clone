@@ -6,10 +6,11 @@ import {
   ChevronDownIcon,
   SearchIcon,
   AdjustmentsIcon,
-} from "react-native-heroicons/outline"
+} from 'react-native-heroicons/outline'
 import Categories from '../components/Categories'
+import FeaturedRow from '../components/FeaturedRow'
 
-const Homescreen = () => {
+const HomeScreen = () => {
   const navigation = useNavigation()
 
   useLayoutEffect(() => {
@@ -25,7 +26,7 @@ const Homescreen = () => {
       <View className="flex-row pb-3 items-center mx-4 space-x-2">
         <Image
           source={{
-            uri: 'https://links.papareact.com/wru'
+            uri: "https://links.papareact.com/wru"
           }}
           className="first-letter:h-7 w-7 bg-gray-300 p-4 rounded-full"
         />
@@ -59,9 +60,25 @@ const Homescreen = () => {
       >
         <Categories />
 
+        <FeaturedRow
+          id="123"
+          title="Featured"
+          description="Paid placements from our partners"
+        />
+        <FeaturedRow
+          id="456"
+          title="Tasty Discounts"
+          description="Everyone's been enjoying these juicy discounts"
+        />
+        <FeaturedRow
+          id="789"
+          title="Offers near you!"
+          description="Why not support your local restaurant tonight!"
+        />
+
       </ScrollView>
     </SafeAreaView>
   )
 }
 
-export default Homescreen
+export default HomeScreen

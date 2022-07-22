@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, Text } from 'react-native'
+import { ScrollView } from 'react-native'
 import CategoryCard from './CategoryCard'
 
 const Categories = () => {
@@ -13,16 +13,24 @@ const Categories = () => {
       showsHorizontalScrollIndicator={false}
     >
       <CategoryCard
-        imgUrl="https://links.papareact.com/wru"
+        imgUrl="https://links.papareact.com/gn7"
         title="Testing 1"
       />
       <CategoryCard
-        imgUrl="https://links.papareact.com/wru"
+        imgUrl="https://links.papareact.com/gn7"
         title="Testing 2"
       />
       <CategoryCard
-        imgUrl="https://links.papareact.com/wru"
+        imgUrl="https://links.papareact.com/gn7"
         title="Testing 3"
+      />
+      <CategoryCard
+        imgUrl="https://links.papareact.com/gn7"
+        title="Testing 4"
+      />
+      <CategoryCard
+        imgUrl="https://links.papareact.com/gn7"
+        title="Testing 5"
       />
     </ScrollView>
   )
