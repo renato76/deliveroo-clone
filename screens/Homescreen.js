@@ -15,7 +15,7 @@ const HomeScreen = () => {
   const navigation = useNavigation()
   const [featuredCategories, setFeaturedCategories] = useState([])
 
-  console.log(featuredCategories)
+  console.log('featured categories >>>', featuredCategories)
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -80,22 +80,15 @@ const HomeScreen = () => {
       >
         <Categories />
 
-        <FeaturedRow
-          id="123"
-          title="Featured"
-          description="Paid placements from our partners"
-        />
-        <FeaturedRow
-          id="456"
-          title="Tasty Discounts"
-          description="Everyone's been enjoying these juicy discounts"
-        />
-        <FeaturedRow
-          id="789"
-          title="Offers near you!"
-          description="Why not support your local restaurant tonight!"
-        />
-
+         {/* Featured */}
+        {featuredCategories?.map((category) => (
+          <FeaturedRow
+            key={category._id}
+            id={category._id}
+            title={category.name}
+            description={category.short_description}
+          />
+        ))}
       </ScrollView>
     </SafeAreaView>
   )
