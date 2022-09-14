@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "package.json",
+  "main": "package-sanity.json",
   "author": "Renato Mignogna <renmignogna@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {

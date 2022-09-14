@@ -80,7 +80,7 @@ const HomeScreen = () => {
       >
         <Categories />
 
-         {/* Featured */}
+        {/* Featured */}
         {featuredCategories?.map((category) => (
           <FeaturedRow
             key={category._id}
